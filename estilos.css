@@ -59,17 +59,15 @@
   }
   
   /* Sección de Información Personal */
-    #informacion {
+  #informacion {
     margin-bottom: 2rem;
     margin-right: 4rem;
-    display: flex;
-    justify-content: space-between; /* Distribuye el espacio entre los elementos */
-    align-items: center; /* Alinea verticalmente */
-    gap: 2rem; /* Espacio opcional entre los elementos */
-    }
-  
+    display: block;
+    
+  }
+
   /* Contenedor del texto (h3 y ul) */
-  .info-texto {
+  .informacion {
     display: flex;
     flex-direction: column;
     gap: 1rem; /* Espacio entre el título y la lista */
@@ -77,6 +75,7 @@
   
   /* Estilo de la imagen */
   #informacion img {
+    display: block;
     border-radius: 18px;
     width: 200px;
   }
@@ -110,6 +109,7 @@
     margin-bottom: 0.5rem;
   }
   
+  /* Diseño responsive */
   @media (max-width: 600px) {
     main {
       padding: 1rem;
@@ -122,29 +122,5 @@
     .categoria {
       font-size: 1.3rem;
     }
-  
-    /* Cambiar la disposición a columna para que se apilen */
-    #informacion {
-      flex-direction: column;
-      align-items: center;
-      margin-right: 0; /* Eliminar margen que pueda afectar el centrado */
-    }
-  
-    /* Opcional: Asegurar que el bloque de texto se vea correctamente */
-    .info-texto {
-      order: 1;       /* Primer elemento: texto */
-      width: 100%;
-      text-align: center;
-    }
-  
-    /* La imagen aparecerá debajo */
-    #informacion img {
-      order: 2;       /* Segundo elemento: imagen */
-      width: 80%;     /* Se adapta al ancho del contenedor */
-      max-width: 200px;
-      margin-top: 1rem; /* Espacio superior para separarla del texto */
-    }
   }
-  
-
   
