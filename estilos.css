@@ -26,7 +26,7 @@
 
   /* Nombre del CV */
   #nombre h1 {
-    text-align: center;
+    text-align: left;
     font-size: 2.5rem;
     color: #2c3e50;
     margin-bottom: 1rem;
