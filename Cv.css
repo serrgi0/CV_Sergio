@@ -1,0 +1,127 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales del body */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 1rem;
+  }
+  
+  /* Contenedor principal */
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Nombre del CV */
+  #nombre h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+
+  /*imagen cv*/
+  #nombre img {
+    width: 200px;
+  }
+
+  /* Categorías de cada sección */
+  .categoria {
+    font-size: 1.5rem;
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #2980b9;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+  
+  /* Listas generales */
+  ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sección de Información Personal */
+    #informacion {
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente */
+    gap: 2rem; /* Espacio opcional entre los elementos */
+    }
+  
+  /* Contenedor del texto (h3 y ul) */
+  .info-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre el título y la lista */
+  }
+  
+  /* Estilo de la imagen */
+  #informacion img {
+    border-radius: 18px;
+    width: 200px;
+  }
+  
+  /* Resumen Profesional */
+  #resumenProfesional .resumen {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  
+  /* Sección Skills */
+  #skills ul.skillsPersonales li {
+    font-size: 1rem;
+  }
+  
+  /* Sección Educación */
+  #educacion ul.educacionPersonal li {
+    font-size: 1rem;
+  }
+  
+  /* Experiencia Laboral */
+  #experiencia ul.experienciaLaboral li {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Certificaciones */
+  #certificaciones ul.certificacionesPersonales li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Diseño responsive */
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+  
+    #nombre h1 {
+      font-size: 2rem;
+    }
+  
+    .categoria {
+      font-size: 1.3rem;
+    }
+  }
+  
