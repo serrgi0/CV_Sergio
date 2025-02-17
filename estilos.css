@@ -110,33 +110,41 @@
     margin-bottom: 0.5rem;
   }
   
-/* Diseño responsive */
-@media (max-width: 600px) {
-  main {
-    padding: 1rem;
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+  
+    #nombre h1 {
+      font-size: 2rem;
+    }
+  
+    .categoria {
+      font-size: 1.3rem;
+    }
+  
+    /* Cambiar la disposición a columna para que se apilen */
+    #informacion {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0; /* Eliminar margen que pueda afectar el centrado */
+    }
+  
+    /* Opcional: Asegurar que el bloque de texto se vea correctamente */
+    .info-texto {
+      order: 1;       /* Primer elemento: texto */
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* La imagen aparecerá debajo */
+    #informacion img {
+      order: 2;       /* Segundo elemento: imagen */
+      width: 80%;     /* Se adapta al ancho del contenedor */
+      max-width: 200px;
+      margin-top: 1rem; /* Espacio superior para separarla del texto */
+    }
   }
-
-  #nombre h1 {
-    font-size: 2rem;
-  }
-
-  .categoria {
-    font-size: 1.3rem;
-  }
-
-  /* Ajusta el contenedor de información para que los elementos se apilen */
-  #informacion {
-    flex-direction: column;
-    align-items: center;
-    margin-right: 0; /* Quita el margen derecho que podría desalinear en móviles */
-  }
-
-  /* Asegura que la imagen se ajuste al contenedor */
-  #informacion img {
-    width: 100%;
-    max-width: 200px; /* Mantiene un tamaño máximo para evitar que sea demasiado grande */
-    margin-bottom: 1rem; /* Espacio inferior para separar de otros elementos */
-  }
-}
+  
 
   
